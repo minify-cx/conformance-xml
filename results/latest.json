@@ -1,0 +1,3240 @@
+{
+  "counts": {
+    "pass": 535
+  },
+  "duration_seconds": 0.345,
+  "eligibility": {
+    "eligible": 535,
+    "excluded": {
+      "doctype-or-parser-inapplicable": 2176,
+      "non-utf8-or-unreadable": 91,
+      "source-parser-rejected": 256
+    }
+  },
+  "format": "xml",
+  "generated_at": "2026-09-09T20:17:39Z",
+  "minifier": {
+    "path": "/workspace/scratch/04e13b047c72/conformance-work/minify/minify"
+  },
+  "results": [
+    {
+      "id": "0ff5b194deaba99e",
+      "source": "eduni/errata-2e/E57.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "fab73d53a2717e16",
+      "source": "eduni/errata-2e/errata2e.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "d0de1ca77508d1c0",
+      "source": "eduni/errata-2e/out/E18.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "d865151101e77ade",
+      "source": "eduni/errata-2e/out/E19.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "6f7c71f469d05453",
+      "source": "eduni/errata-2e/out/E24.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "4ed94e234283b030",
+      "source": "eduni/errata-3e/errata3e.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "c3bca0a832dd6143",
+      "source": "eduni/errata-4e/014.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "6c2e262c9f8d2c62",
+      "source": "eduni/errata-4e/016.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "2f206e8d781fd1f5",
+      "source": "eduni/errata-4e/019.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "f28ad54a10d84225",
+      "source": "eduni/errata-4e/8bom.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "39232d88a60c14f0",
+      "source": "eduni/errata-4e/errata4e.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "2d1d291bf9a694d1",
+      "source": "eduni/errata-4e/ibm89n06.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "0a6a7ef7bcf4222c",
+      "source": "eduni/errata-4e/ibm89n07.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "76784ed7cc55f678",
+      "source": "eduni/errata-4e/ibm89n08.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "78c2730b4d219229",
+      "source": "eduni/errata-4e/ibm89n09.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "82b570bedbaf63d6",
+      "source": "eduni/errata-4e/ibm89n10.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "690cb61d04e1211c",
+      "source": "eduni/errata-4e/ibm89n11.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "f06e93f11c041197",
+      "source": "eduni/errata-4e/ibm89n12.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "691fb9e30c10db91",
+      "source": "eduni/errata-4e/inclbom_out.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "5a5af0e175125f85",
+      "source": "eduni/errata-4e/inclbombom_out.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "e8abf39403dd6641",
+      "source": "eduni/namespaces/1.0/017.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "b713e95ece32eb3e",
+      "source": "eduni/namespaces/1.0/018.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "84fd3896cef41b01",
+      "source": "eduni/namespaces/1.0/019.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "7674af9be437e886",
+      "source": "eduni/namespaces/1.0/020.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "654056b7f07b3495",
+      "source": "eduni/namespaces/1.0/021.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "4c968b2628ff4716",
+      "source": "eduni/namespaces/1.0/022.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "9088655e944414c9",
+      "source": "eduni/namespaces/1.0/024.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "037b2e98a276ea92",
+      "source": "eduni/namespaces/1.0/027.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "8d0ac690470a1d7b",
+      "source": "eduni/namespaces/1.0/028.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "8bd0902b6ed832f5",
+      "source": "eduni/namespaces/1.0/034.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "f7bc98556af64459",
+      "source": "eduni/namespaces/1.0/037.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "c3bf3bd3dbc4bcdc",
+      "source": "eduni/namespaces/1.0/038.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "de08f8046cd4cf1f",
+      "source": "eduni/namespaces/1.0/039.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "cce7eaa4be21faed",
+      "source": "eduni/namespaces/1.0/040.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "77331cbc5ac1a3d7",
+      "source": "eduni/namespaces/1.0/041.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "9610c66ccf9aba40",
+      "source": "eduni/namespaces/1.0/rmt-ns10.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "1c9f2a0ef59207a7",
+      "source": "eduni/namespaces/1.1/rmt-ns11.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "1d8243d7dfd98c6a",
+      "source": "eduni/namespaces/errata-1e/errata1e.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "c23257343efd39c4",
+      "source": "eduni/xml-1.1/015.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "34929ef0fc0094da",
+      "source": "eduni/xml-1.1/016.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "cbc66dc1b6de5dd8",
+      "source": "eduni/xml-1.1/017.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "f349da8e90126028",
+      "source": "eduni/xml-1.1/018.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "2933fd6c66282763",
+      "source": "eduni/xml-1.1/019.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "8a9135b7909ec1cc",
+      "source": "eduni/xml-1.1/out/006.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "fc7417919066fd0d",
+      "source": "eduni/xml-1.1/out/007.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "57fde209bd31ac35",
+      "source": "eduni/xml-1.1/out/010.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "b7a7665b0ba68e8d",
+      "source": "eduni/xml-1.1/out/012.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "9b9838cf5ec2455c",
+      "source": "eduni/xml-1.1/out/015.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "9140df1fa814b131",
+      "source": "eduni/xml-1.1/out/017.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "bcc585c058336ea9",
+      "source": "eduni/xml-1.1/out/018.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "4c52f3f1314c5860",
+      "source": "eduni/xml-1.1/out/022.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "115bca661ee64a2b",
+      "source": "eduni/xml-1.1/out/023.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "c5f374b72d3e6fc4",
+      "source": "eduni/xml-1.1/out/024.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "2d926cb733966dee",
+      "source": "eduni/xml-1.1/out/025.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "4c5941a8aad81bd1",
+      "source": "eduni/xml-1.1/out/026.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "b0b2ed0f44226db8",
+      "source": "eduni/xml-1.1/out/027.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "a87df28a21206297",
+      "source": "eduni/xml-1.1/out/028.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "fa6642ffbc29e2df",
+      "source": "eduni/xml-1.1/out/029.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "6b26de1a0343a69f",
+      "source": "eduni/xml-1.1/out/030.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "ace5daa1d09412bf",
+      "source": "eduni/xml-1.1/out/031.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "6dac8a3278743aed",
+      "source": "eduni/xml-1.1/out/032.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "611645aefa827c6f",
+      "source": "eduni/xml-1.1/out/033.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "d459205a883b5f88",
+      "source": "eduni/xml-1.1/out/034.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "0977a62852f8bb7f",
+      "source": "eduni/xml-1.1/out/035.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "d933d5b1e15a381a",
+      "source": "eduni/xml-1.1/out/036.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "9286718e0ba8ab33",
+      "source": "eduni/xml-1.1/out/037.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "ade0edce52449d8c",
+      "source": "eduni/xml-1.1/out/040.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "b61f7547d4350d02",
+      "source": "eduni/xml-1.1/out/044.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "6077b6d4b8228e8a",
+      "source": "eduni/xml-1.1/out/045.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "2f07ebf37c8e9dcb",
+      "source": "eduni/xml-1.1/out/046.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "020ef3f8f65237d1",
+      "source": "eduni/xml-1.1/out/047.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "0f0e3c528161f979",
+      "source": "eduni/xml-1.1/out/048.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "b635c6b53342c935",
+      "source": "eduni/xml-1.1/out/049.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "9aeb200e575d6018",
+      "source": "eduni/xml-1.1/out/050.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "c2322158a3f9b7f0",
+      "source": "eduni/xml-1.1/out/051.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "0f0f0a91c3936c88",
+      "source": "eduni/xml-1.1/out/052.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "4fd7780bb57e59d9",
+      "source": "eduni/xml-1.1/out/053.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "15c19d09072e2920",
+      "source": "eduni/xml-1.1/xml11.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "d6a91f3e21b871ac",
+      "source": "ibm/ibm_oasis_invalid.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "c31eb700c5f195c3",
+      "source": "ibm/ibm_oasis_not-wf.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "599aa46b995844c8",
+      "source": "ibm/ibm_oasis_valid.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "d7b82160397277be",
+      "source": "ibm/invalid/P28/out/ibm28i01.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "0009b27fc334547f",
+      "source": "ibm/invalid/P32/out/ibm32i01.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "da579fd562ec5cac",
+      "source": "ibm/invalid/P32/out/ibm32i03.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "8fa94d734a4666ff",
+      "source": "ibm/invalid/P32/out/ibm32i04.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "d76d6da1ecf55024",
+      "source": "ibm/invalid/P39/out/ibm39i01.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "f31671b9894b35b2",
+      "source": "ibm/invalid/P39/out/ibm39i02.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "319ebdc291dcedc2",
+      "source": "ibm/invalid/P39/out/ibm39i03.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "56919af420dcff0e",
+      "source": "ibm/invalid/P39/out/ibm39i04.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "ad9791a45b72073b",
+      "source": "ibm/invalid/P41/out/ibm41i01.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "16495f139b688c9b",
+      "source": "ibm/invalid/P41/out/ibm41i02.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "cbcbbbe182033a54",
+      "source": "ibm/invalid/P45/out/ibm45i01.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "59d0f228e7f8653b",
+      "source": "ibm/invalid/P49/out/ibm49i01.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "b420c356fe0b6ddb",
+      "source": "ibm/invalid/P50/out/ibm50i01.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "6a46f0240503df74",
+      "source": "ibm/invalid/P51/out/ibm51i01.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "8f1f0e2fcc6b4c78",
+      "source": "ibm/invalid/P51/out/ibm51i02.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "bf5ba8b0a9f96025",
+      "source": "ibm/invalid/P51/out/ibm51i03.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "464d26031d5dfa0d",
+      "source": "ibm/invalid/P56/out/ibm56i01.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "1e963d606d67002c",
+      "source": "ibm/invalid/P56/out/ibm56i02.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "7056e861d5feefed",
+      "source": "ibm/invalid/P56/out/ibm56i03.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "1f2f9068416098a5",
+      "source": "ibm/invalid/P56/out/ibm56i05.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "b75d06b05a565c1a",
+      "source": "ibm/invalid/P56/out/ibm56i06.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "6ab7a37b89356900",
+      "source": "ibm/invalid/P56/out/ibm56i07.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "e4f2c6e789ef041a",
+      "source": "ibm/invalid/P56/out/ibm56i08.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "47240ecad7cc0571",
+      "source": "ibm/invalid/P56/out/ibm56i09.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "c35dcd146c39d144",
+      "source": "ibm/invalid/P56/out/ibm56i10.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "9eddac39c83213c5",
+      "source": "ibm/invalid/P56/out/ibm56i11.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "0241b4888508fea8",
+      "source": "ibm/invalid/P56/out/ibm56i12.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "9119f1265d00894a",
+      "source": "ibm/invalid/P56/out/ibm56i13.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "f94a6b9aaab18ea5",
+      "source": "ibm/invalid/P56/out/ibm56i14.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "cd0b8c0714537abd",
+      "source": "ibm/invalid/P56/out/ibm56i15.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "c0bab92971ffeebe",
+      "source": "ibm/invalid/P56/out/ibm56i16.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "17ed212ab50abad6",
+      "source": "ibm/invalid/P56/out/ibm56i17.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "c2ee4d6684129013",
+      "source": "ibm/invalid/P56/out/ibm56i18.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "0842b2738e63ea50",
+      "source": "ibm/invalid/P59/out/ibm59i01.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "adce83f11d4a388a",
+      "source": "ibm/invalid/P60/out/ibm60i01.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "9c3ea864ca4ab896",
+      "source": "ibm/invalid/P60/out/ibm60i02.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "1335ab22dfdc8e4f",
+      "source": "ibm/invalid/P60/out/ibm60i03.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "c5df47b4b6a715aa",
+      "source": "ibm/invalid/P60/out/ibm60i04.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "1c4972d05d567009",
+      "source": "ibm/invalid/P68/out/ibm68i01.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "8d55d6669c26bf73",
+      "source": "ibm/invalid/P68/out/ibm68i02.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "a5048abddafdd596",
+      "source": "ibm/invalid/P68/out/ibm68i03.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "076e2ceb45f81c6d",
+      "source": "ibm/invalid/P68/out/ibm68i04.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "c1c6c53c832bc414",
+      "source": "ibm/invalid/P69/out/ibm69i01.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "89286bc2b64c8801",
+      "source": "ibm/invalid/P69/out/ibm69i02.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "f443bee3ec23148a",
+      "source": "ibm/invalid/P69/out/ibm69i03.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "cefbaade1fd73c04",
+      "source": "ibm/invalid/P69/out/ibm69i04.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "0b06bcb0df1bab24",
+      "source": "ibm/invalid/P76/out/ibm76i01.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "db82e6c534ac9e8a",
+      "source": "ibm/valid/P01/out/ibm01v01.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "ad3133a785eb4cc3",
+      "source": "ibm/valid/P02/out/ibm02v01.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "ade5becaf2385853",
+      "source": "ibm/valid/P03/out/ibm03v01.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "ce5f59b12bff768c",
+      "source": "ibm/valid/P09/out/ibm09v01.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "70637784bcb09884",
+      "source": "ibm/valid/P09/out/ibm09v02.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "06597fe307eddc42",
+      "source": "ibm/valid/P09/out/ibm09v03.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "526961001e4cf467",
+      "source": "ibm/valid/P09/out/ibm09v04.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "2a46734792ce6581",
+      "source": "ibm/valid/P09/out/ibm09v05.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "fca9a73f28f5b826",
+      "source": "ibm/valid/P10/out/ibm10v01.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "2bb58fd8569d5bb7",
+      "source": "ibm/valid/P10/out/ibm10v02.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "c3e5e457e0d00f64",
+      "source": "ibm/valid/P10/out/ibm10v03.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "54f327e5ae2c0090",
+      "source": "ibm/valid/P10/out/ibm10v04.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "6464c6403f030bdd",
+      "source": "ibm/valid/P10/out/ibm10v05.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "7db7495bc2813606",
+      "source": "ibm/valid/P10/out/ibm10v06.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "f99c957a15f46a4a",
+      "source": "ibm/valid/P10/out/ibm10v07.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "e53dbf3ecd2b87fd",
+      "source": "ibm/valid/P10/out/ibm10v08.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "82cdf83fa5e50ea4",
+      "source": "ibm/valid/P11/out/ibm11v01.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "01d1e565562b54f4",
+      "source": "ibm/valid/P11/out/ibm11v02.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "708bfa6765e84021",
+      "source": "ibm/valid/P11/out/ibm11v03.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "5cc65de2fcbc11d1",
+      "source": "ibm/valid/P11/out/ibm11v04.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "d32d92e4d75b4547",
+      "source": "ibm/valid/P12/out/ibm12v01.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "69a009eb99dca3fe",
+      "source": "ibm/valid/P12/out/ibm12v02.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "0dac9e63eba9c950",
+      "source": "ibm/valid/P12/out/ibm12v03.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "7b59ce0d25eeddb4",
+      "source": "ibm/valid/P12/out/ibm12v04.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "4ec69bdce27be7c8",
+      "source": "ibm/valid/P13/out/ibm13v01.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "23897868bf53424c",
+      "source": "ibm/valid/P14/out/ibm14v01.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "34c8d5c3c4cf72ec",
+      "source": "ibm/valid/P14/out/ibm14v02.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "e0321a6a68f43a35",
+      "source": "ibm/valid/P14/out/ibm14v03.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "2ad192225ed968a2",
+      "source": "ibm/valid/P15/out/ibm15v01.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "e9ce9aec2902ec5c",
+      "source": "ibm/valid/P15/out/ibm15v02.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "3f54d990fdfcf294",
+      "source": "ibm/valid/P15/out/ibm15v03.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "eefa741fffdd2129",
+      "source": "ibm/valid/P15/out/ibm15v04.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "b7ffe74a43d6c05d",
+      "source": "ibm/valid/P16/out/ibm16v01.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "b1d709764467c63b",
+      "source": "ibm/valid/P16/out/ibm16v02.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "9fac480bec2e547e",
+      "source": "ibm/valid/P16/out/ibm16v03.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "706387b7259d53eb",
+      "source": "ibm/valid/P17/out/ibm17v01.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "3a5aba96e5658b14",
+      "source": "ibm/valid/P18/out/ibm18v01.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "dc972eb70f73d4fd",
+      "source": "ibm/valid/P19/out/ibm19v01.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "00eb9f945ab07ee2",
+      "source": "ibm/valid/P20/out/ibm20v01.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "80221ae11bd91d2b",
+      "source": "ibm/valid/P20/out/ibm20v02.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "7a4500540f6bd9e0",
+      "source": "ibm/valid/P21/out/ibm21v01.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "cccfad824088aa8f",
+      "source": "ibm/valid/P22/out/ibm22v01.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "5641f83d16d4abf6",
+      "source": "ibm/valid/P22/out/ibm22v02.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "e6666cc9cf139e04",
+      "source": "ibm/valid/P22/out/ibm22v03.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "437b675cb467d2b7",
+      "source": "ibm/valid/P22/out/ibm22v04.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "53273b8f1b36144d",
+      "source": "ibm/valid/P22/out/ibm22v05.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "a1f8bfd47609a571",
+      "source": "ibm/valid/P22/out/ibm22v06.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "c2daec195d25afa8",
+      "source": "ibm/valid/P22/out/ibm22v07.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "ad17343ec1436f6d",
+      "source": "ibm/valid/P23/out/ibm23v01.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "62eeb54ccad4808f",
+      "source": "ibm/valid/P23/out/ibm23v02.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "1ccf00fb7ff04920",
+      "source": "ibm/valid/P23/out/ibm23v03.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "f3ac6b8945eff654",
+      "source": "ibm/valid/P23/out/ibm23v04.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "74dd8cb076a770f6",
+      "source": "ibm/valid/P23/out/ibm23v05.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "4ad43ca8ff1cb6db",
+      "source": "ibm/valid/P23/out/ibm23v06.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "46d4d3a16404d8a2",
+      "source": "ibm/valid/P24/out/ibm24v01.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "ffb80c8645ba13fe",
+      "source": "ibm/valid/P24/out/ibm24v02.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "7100c800f4855820",
+      "source": "ibm/valid/P25/out/ibm25v01.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "da9b1b05116de3b3",
+      "source": "ibm/valid/P25/out/ibm25v02.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "c8344aaac792111b",
+      "source": "ibm/valid/P25/out/ibm25v03.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "0c124271f2c8b677",
+      "source": "ibm/valid/P25/out/ibm25v04.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "ee4e438c40bb50aa",
+      "source": "ibm/valid/P26/out/ibm26v01.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "8f07d336e2219bb4",
+      "source": "ibm/valid/P27/out/ibm27v01.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "165731fe0cb13ec1",
+      "source": "ibm/valid/P27/out/ibm27v02.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "00cf4d7910f8347d",
+      "source": "ibm/valid/P27/out/ibm27v03.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "f2b7b223c7a9c1ad",
+      "source": "ibm/valid/P28/out/ibm28v01.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "61ed27946870e8d4",
+      "source": "ibm/valid/P30/out/ibm30v01.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "056e9e78c664a9fc",
+      "source": "ibm/valid/P30/out/ibm30v02.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "e7ecf9b35450d08d",
+      "source": "ibm/valid/P31/out/ibm31v01.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "615cf18d7608e097",
+      "source": "ibm/valid/P32/out/ibm32v01.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "cecb85d0c90de602",
+      "source": "ibm/valid/P32/out/ibm32v02.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "c0da2407f49b2b53",
+      "source": "ibm/valid/P32/out/ibm32v03.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "c01b2e379bb7020f",
+      "source": "ibm/valid/P32/out/ibm32v04.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "43487c32dff57dbe",
+      "source": "ibm/valid/P33/out/ibm33v01.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "8d0f6caac00c4ab9",
+      "source": "ibm/valid/P34/out/ibm34v01.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "ad0649506252442b",
+      "source": "ibm/valid/P35/out/ibm35v01.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "7932a1366f3f6e7b",
+      "source": "ibm/valid/P36/out/ibm36v01.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "24c9d902f8f6a5d6",
+      "source": "ibm/valid/P37/out/ibm37v01.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "707f7b526bed42cd",
+      "source": "ibm/valid/P38/out/ibm38v01.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "cfbe561bb1049b79",
+      "source": "ibm/valid/P39/out/ibm39v01.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "a64d008735683e35",
+      "source": "ibm/valid/P40/out/ibm40v01.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "47b55d67c2e4538d",
+      "source": "ibm/valid/P41/out/ibm41v01.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "7a5ced05b14b32d6",
+      "source": "ibm/valid/P42/out/ibm42v01.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "b15e60f29ca6d319",
+      "source": "ibm/valid/P43/out/ibm43v01.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "4a2360dc408b03ce",
+      "source": "ibm/valid/P44/out/ibm44v01.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "38434200efcbbdfb",
+      "source": "ibm/valid/P45/out/ibm45v01.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "b65376de963e9087",
+      "source": "ibm/valid/P47/out/ibm47v01.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "48302ac7ce9b7a63",
+      "source": "ibm/valid/P49/out/ibm49v01.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "a1419f6267ac3529",
+      "source": "ibm/valid/P50/out/ibm50v01.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "b4a3c4bece85a55d",
+      "source": "ibm/valid/P51/out/ibm51v01.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "d5be4a1fa187d7c7",
+      "source": "ibm/valid/P51/out/ibm51v02.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "9ddf2f7c2003afa1",
+      "source": "ibm/valid/P52/out/ibm52v01.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "dd80c87bfe8b62d0",
+      "source": "ibm/valid/P54/out/ibm54v02.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "c11b18e46eaf4019",
+      "source": "ibm/valid/P54/out/ibm54v03.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "3ef3421e9f07f031",
+      "source": "ibm/valid/P55/out/ibm55v01.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "25c3402b255ddf5c",
+      "source": "ibm/valid/P56/out/ibm56v01.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "4618ceb9ee347796",
+      "source": "ibm/valid/P56/out/ibm56v02.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "d036be35f48aa4c1",
+      "source": "ibm/valid/P56/out/ibm56v03.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "64eae108a46e32c8",
+      "source": "ibm/valid/P56/out/ibm56v04.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "f63f6a91dfc4a70f",
+      "source": "ibm/valid/P56/out/ibm56v05.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "f825e4453a8ee29d",
+      "source": "ibm/valid/P56/out/ibm56v06.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "d00471982913e17b",
+      "source": "ibm/valid/P56/out/ibm56v07.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "eadd5aea9ec13d44",
+      "source": "ibm/valid/P56/out/ibm56v09.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "a4ed43a31a20682a",
+      "source": "ibm/valid/P56/out/ibm56v10.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "5736e1c29e64b2e2",
+      "source": "ibm/valid/P59/out/ibm59v01.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "e0a16405699d442b",
+      "source": "ibm/valid/P59/out/ibm59v02.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "429beb5cc9caee72",
+      "source": "ibm/valid/P60/out/ibm60v01.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "fe28755f49900efc",
+      "source": "ibm/valid/P60/out/ibm60v02.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "837fb8dae28b506c",
+      "source": "ibm/valid/P60/out/ibm60v03.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "a4864a9f60715375",
+      "source": "ibm/valid/P60/out/ibm60v04.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "df743abed6ec7867",
+      "source": "ibm/valid/P61/out/ibm61v01.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "dfb246607ea438c2",
+      "source": "ibm/valid/P61/out/ibm61v02.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "e946259f1b992bad",
+      "source": "ibm/valid/P62/out/ibm62v01.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "8a2f5ac40053eb1d",
+      "source": "ibm/valid/P62/out/ibm62v02.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "eaf52f92d2921ea1",
+      "source": "ibm/valid/P62/out/ibm62v03.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "23d915435a6a7e3f",
+      "source": "ibm/valid/P62/out/ibm62v04.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "8888c17527f1192e",
+      "source": "ibm/valid/P62/out/ibm62v05.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "12133a81036346ba",
+      "source": "ibm/valid/P63/out/ibm63v01.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "33eb33e5c684467d",
+      "source": "ibm/valid/P63/out/ibm63v02.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "62702ea2725866c2",
+      "source": "ibm/valid/P63/out/ibm63v03.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "5839d61f6a4ca324",
+      "source": "ibm/valid/P63/out/ibm63v04.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "7b52ced7cbe303ee",
+      "source": "ibm/valid/P63/out/ibm63v05.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "30c40b826de2cace",
+      "source": "ibm/valid/P64/out/ibm64v01.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "cb8e4de691608aa4",
+      "source": "ibm/valid/P64/out/ibm64v02.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "6c7e647622c524dd",
+      "source": "ibm/valid/P64/out/ibm64v03.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "afe394232fdab8ab",
+      "source": "ibm/valid/P65/out/ibm65v01.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "a5093e59ac33ec39",
+      "source": "ibm/valid/P65/out/ibm65v02.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "a7e88bac7d725ee1",
+      "source": "ibm/valid/P66/out/ibm66v01.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "1f52e50567095451",
+      "source": "ibm/valid/P67/out/ibm67v01.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "22fe8a357c13e194",
+      "source": "ibm/valid/P68/out/ibm68v01.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "3ea82e2d68fe8af8",
+      "source": "ibm/valid/P68/out/ibm68v02.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "fb70df6e402a9e22",
+      "source": "ibm/valid/P69/out/ibm69v01.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "7efdd5de662ee5bd",
+      "source": "ibm/valid/P69/out/ibm69v02.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "0cff47f15f87f90e",
+      "source": "ibm/valid/P78/out/ibm78v01.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "da49d28d814b13b7",
+      "source": "ibm/valid/P79/out/ibm79v01.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "cbf2953a30472e41",
+      "source": "ibm/valid/P85/out/ibm85v01.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "83f68704f0955337",
+      "source": "ibm/valid/P86/out/ibm86v01.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "0522b6b24396ba8d",
+      "source": "ibm/valid/P87/out/ibm87v01.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "6d7b4de783704b05",
+      "source": "ibm/valid/P88/out/ibm88v01.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "50dbd94e7e89b012",
+      "source": "ibm/valid/P89/out/ibm89v01.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "105b3afac9efe71f",
+      "source": "ibm/xml-1.1/ibm_invalid.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "26c8e1022d9aefb1",
+      "source": "ibm/xml-1.1/ibm_not-wf.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "ac78550cf3f4f04b",
+      "source": "ibm/xml-1.1/ibm_valid.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "d8978f30187c73c9",
+      "source": "ibm/xml-1.1/not-wf/P02/ibm02n32.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "6a64d9e0e38d1f69",
+      "source": "ibm/xml-1.1/not-wf/P02/ibm02n33.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "490db41121df8045",
+      "source": "ibm/xml-1.1/not-wf/P02/ibm02n34.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "5fcc59b897b8e281",
+      "source": "ibm/xml-1.1/not-wf/P02/ibm02n35.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "aa9908345561526a",
+      "source": "ibm/xml-1.1/not-wf/P02/ibm02n36.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "25f5928f6645fafd",
+      "source": "ibm/xml-1.1/not-wf/P02/ibm02n37.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "767ec16e62ae61b6",
+      "source": "ibm/xml-1.1/not-wf/P02/ibm02n38.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "aad26bb177bf470a",
+      "source": "ibm/xml-1.1/not-wf/P02/ibm02n39.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "dfd61fde0c2b9114",
+      "source": "ibm/xml-1.1/not-wf/P02/ibm02n40.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "ebffde3809931be7",
+      "source": "ibm/xml-1.1/not-wf/P02/ibm02n41.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "f670fa967a651417",
+      "source": "ibm/xml-1.1/not-wf/P02/ibm02n42.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "5b5d8a164bc672d3",
+      "source": "ibm/xml-1.1/not-wf/P02/ibm02n43.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "1ac7fd89dd16d633",
+      "source": "ibm/xml-1.1/not-wf/P02/ibm02n44.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "30b55a51ea5eface",
+      "source": "ibm/xml-1.1/not-wf/P02/ibm02n45.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "e9157f74bafef8c6",
+      "source": "ibm/xml-1.1/not-wf/P02/ibm02n46.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "bc184ca743c85c5c",
+      "source": "ibm/xml-1.1/not-wf/P02/ibm02n47.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "85b94d918a147498",
+      "source": "ibm/xml-1.1/not-wf/P02/ibm02n48.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "c8f2a68336892c9b",
+      "source": "ibm/xml-1.1/not-wf/P02/ibm02n49.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "0c9f282c4c1e639a",
+      "source": "ibm/xml-1.1/not-wf/P02/ibm02n50.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "f8fdf4a04333119d",
+      "source": "ibm/xml-1.1/not-wf/P02/ibm02n51.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "64cf6a00a14c10b9",
+      "source": "ibm/xml-1.1/not-wf/P02/ibm02n52.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "9764c1454e99aba1",
+      "source": "ibm/xml-1.1/not-wf/P02/ibm02n53.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "0aedff3fa810db4f",
+      "source": "ibm/xml-1.1/not-wf/P02/ibm02n54.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "00eea275c1f1ac16",
+      "source": "ibm/xml-1.1/not-wf/P02/ibm02n55.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "3851872b01b0906e",
+      "source": "ibm/xml-1.1/not-wf/P02/ibm02n56.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "c39356f6d8cafb8c",
+      "source": "ibm/xml-1.1/not-wf/P02/ibm02n57.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "d478da839a804b9f",
+      "source": "ibm/xml-1.1/not-wf/P02/ibm02n59.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "977bd0829eb0306e",
+      "source": "ibm/xml-1.1/not-wf/P02/ibm02n60.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "6bfc09c58acbf8ed",
+      "source": "ibm/xml-1.1/not-wf/P02/ibm02n61.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "664ad57c1246b19c",
+      "source": "ibm/xml-1.1/not-wf/P02/ibm02n62.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "2556a8382faa275a",
+      "source": "ibm/xml-1.1/not-wf/P02/ibm02n63.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "c3684fc5f3fdf177",
+      "source": "ibm/xml-1.1/valid/P03/out/ibm03v01.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "563111b28475e712",
+      "source": "ibm/xml-1.1/valid/P03/out/ibm03v02.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "1877d4b20b32545e",
+      "source": "ibm/xml-1.1/valid/P03/out/ibm03v03.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "1657b59811202132",
+      "source": "ibm/xml-1.1/valid/P03/out/ibm03v04.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "a0dd43ea67b34430",
+      "source": "ibm/xml-1.1/valid/P03/out/ibm03v05.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "b066c11b3a46efd2",
+      "source": "ibm/xml-1.1/valid/P03/out/ibm03v06.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "bcb4257e4c287c57",
+      "source": "ibm/xml-1.1/valid/P03/out/ibm03v07.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "33a5063a38787c3b",
+      "source": "ibm/xml-1.1/valid/P03/out/ibm03v08.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "302a739bd392b20c",
+      "source": "ibm/xml-1.1/valid/P03/out/ibm03v09.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "a2c867c8143e42f3",
+      "source": "japanese/japanese.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "e056b7196b1e9314",
+      "source": "oasis/oasis.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "b58e764214331d36",
+      "source": "oasis/p01pass1.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "4e4b093008317396",
+      "source": "oasis/p01pass3.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "440020effa71975b",
+      "source": "oasis/p03pass1.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "0a2f2ecf19322537",
+      "source": "oasis/p10pass1.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "8c70d2ec642a3eca",
+      "source": "oasis/p14pass1.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "f399a707af88b5c5",
+      "source": "oasis/p16pass2.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "37eb5772266ec95f",
+      "source": "oasis/p16pass3.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "bc2280c31cbfba15",
+      "source": "oasis/p22pass1.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "4657a93cd9bbdc98",
+      "source": "oasis/p22pass2.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "47f9f4ff08b154eb",
+      "source": "oasis/p22pass3.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "807585d077738497",
+      "source": "oasis/p23pass1.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "e113fe95aedd2861",
+      "source": "oasis/p23pass2.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "b58162f5cfaf4840",
+      "source": "oasis/p23pass3.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "bf503451be0703c5",
+      "source": "oasis/p23pass4.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "28084ce6aa4ab665",
+      "source": "oasis/p24pass1.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "499fd06fcb3ab608",
+      "source": "oasis/p24pass2.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "49a08271d9de6243",
+      "source": "oasis/p24pass3.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "4f9fd6b64c6c605a",
+      "source": "oasis/p24pass4.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "5d3bdbb282fed0e9",
+      "source": "oasis/p25pass1.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "f8760a5551b8592e",
+      "source": "oasis/p25pass2.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "94b9a275b6557f2d",
+      "source": "oasis/p26pass1.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "121baa7e9781368a",
+      "source": "oasis/p27pass1.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "bf7ccbe52540dc22",
+      "source": "oasis/p27pass2.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "5938965c3a480fce",
+      "source": "oasis/p27pass3.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "bd16a60d34e715b3",
+      "source": "oasis/p27pass4.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "595939ea4c692e1c",
+      "source": "oasis/p32pass1.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "e3509e543f151639",
+      "source": "oasis/p32pass2.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "70f037b6886393ca",
+      "source": "oasis/p39pass1.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "1cb4845f37153595",
+      "source": "oasis/p39pass2.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "de488ffbe8a7f550",
+      "source": "oasis/p40pass1.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "def6cf1ad82c5d9c",
+      "source": "oasis/p40pass2.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "d4f6901918531c08",
+      "source": "oasis/p40pass3.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "98ee1b65f1de35ac",
+      "source": "oasis/p40pass4.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "81084443b695f9b0",
+      "source": "oasis/p41pass1.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "bd4344b998b5f715",
+      "source": "oasis/p41pass2.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "99a0b7035bbffd0d",
+      "source": "oasis/p42pass1.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "0d4cda9c494c1a1a",
+      "source": "oasis/p42pass2.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "b78f2e30334b2191",
+      "source": "oasis/p44pass1.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "fcb6d48ba4608e63",
+      "source": "oasis/p44pass2.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "932869d1855b5994",
+      "source": "oasis/p44pass3.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "91991916a72416cd",
+      "source": "oasis/p44pass4.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "3450188143f730a0",
+      "source": "oasis/p44pass5.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "76e4097d362bfc11",
+      "source": "oasis/p66pass1.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "fadf875dec43d513",
+      "source": "sun/sun-error.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "b936bb4eefde7d66",
+      "source": "sun/valid/out/dtd00.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "d971ee9bc382288e",
+      "source": "sun/valid/out/dtd01.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "3de7677a8311ee73",
+      "source": "sun/valid/out/element.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "724f9f4e2eb582ed",
+      "source": "sun/valid/out/ext01.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "6a4cba0ddc21ed93",
+      "source": "sun/valid/out/ext02.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "6d79a82543e4f426",
+      "source": "sun/valid/out/optional.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "457461dba6ff9d08",
+      "source": "sun/valid/out/pe00.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "a4b214ed7217249a",
+      "source": "sun/valid/out/pe02.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "a1f404440b163070",
+      "source": "sun/valid/out/pe03.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "2186df02708fb6fc",
+      "source": "sun/valid/out/required00.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "3401cffe9795f482",
+      "source": "sun/valid/out/sa01.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "6ac50085657abed2",
+      "source": "sun/valid/out/sgml01.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "bb7ed2ba6b8c43d4",
+      "source": "sun/valid/out/v-lang01.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "8431916c560e67a7",
+      "source": "sun/valid/out/v-lang02.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "adc496ba738b80da",
+      "source": "sun/valid/out/v-lang03.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "0610f2119126627a",
+      "source": "sun/valid/out/v-lang04.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "fc1b05c2048e7374",
+      "source": "sun/valid/out/v-lang05.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "d0a559148541b34b",
+      "source": "sun/valid/out/v-lang06.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "80cc7e6d21118196",
+      "source": "xmltest/invalid/not-sa/out/022.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "616137c52111aed6",
+      "source": "xmltest/valid/ext-sa/out/001.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "c1b1dfccbdb3de07",
+      "source": "xmltest/valid/ext-sa/out/002.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "d58ccd8922fc3f50",
+      "source": "xmltest/valid/ext-sa/out/003.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "84d0a119083c94fa",
+      "source": "xmltest/valid/ext-sa/out/004.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "8b71846fe06d3f19",
+      "source": "xmltest/valid/ext-sa/out/005.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "7fb451ac9af00fcf",
+      "source": "xmltest/valid/ext-sa/out/006.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "20a3785fbd3097d2",
+      "source": "xmltest/valid/ext-sa/out/007.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "1e3481ebb30c4a61",
+      "source": "xmltest/valid/ext-sa/out/008.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "f33365530d732d2b",
+      "source": "xmltest/valid/ext-sa/out/009.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "72f81f361688918b",
+      "source": "xmltest/valid/ext-sa/out/010.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "281922964239c1fd",
+      "source": "xmltest/valid/ext-sa/out/011.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "22cca7edaefc758d",
+      "source": "xmltest/valid/ext-sa/out/012.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "25638cbf5291240f",
+      "source": "xmltest/valid/ext-sa/out/013.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "8edfd4aabbdba6fc",
+      "source": "xmltest/valid/ext-sa/out/014.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "2e389a9990d0c632",
+      "source": "xmltest/valid/not-sa/out/001.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "b8b293f3b1622d38",
+      "source": "xmltest/valid/not-sa/out/002.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "b757b3d7655ab116",
+      "source": "xmltest/valid/not-sa/out/003.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "3c6a44a5ebbf4b52",
+      "source": "xmltest/valid/not-sa/out/004.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "ce58f08a24fafb98",
+      "source": "xmltest/valid/not-sa/out/005.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "231ab1685267b56e",
+      "source": "xmltest/valid/not-sa/out/006.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "52813dd5b1dbccf3",
+      "source": "xmltest/valid/not-sa/out/007.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "b0e54c1f391bc7ef",
+      "source": "xmltest/valid/not-sa/out/008.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "44dc592db4b8c8b7",
+      "source": "xmltest/valid/not-sa/out/009.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "781c4d1c6db96f71",
+      "source": "xmltest/valid/not-sa/out/010.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "91450c12026493d7",
+      "source": "xmltest/valid/not-sa/out/011.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "de16133c60a27960",
+      "source": "xmltest/valid/not-sa/out/012.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "df5e772fed677f80",
+      "source": "xmltest/valid/not-sa/out/013.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "9f73ac0bdcf6d342",
+      "source": "xmltest/valid/not-sa/out/014.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "a07cd05b2eacd4bd",
+      "source": "xmltest/valid/not-sa/out/015.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "4b9b7ac9203ba7ee",
+      "source": "xmltest/valid/not-sa/out/016.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "2b72bc7b9e14bb6a",
+      "source": "xmltest/valid/not-sa/out/017.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "1fa3f2cbfbeaafab",
+      "source": "xmltest/valid/not-sa/out/018.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "914b15991f15d93a",
+      "source": "xmltest/valid/not-sa/out/019.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "71f4b31ae5799183",
+      "source": "xmltest/valid/not-sa/out/020.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "47f233c8c424afb8",
+      "source": "xmltest/valid/not-sa/out/021.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "f2c6fefbe26d8350",
+      "source": "xmltest/valid/not-sa/out/022.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "348c1f68d3aceaa6",
+      "source": "xmltest/valid/not-sa/out/023.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "07cd1c2a19ecd158",
+      "source": "xmltest/valid/not-sa/out/024.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "389dfb2096ce878c",
+      "source": "xmltest/valid/not-sa/out/025.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "6970183ca7787025",
+      "source": "xmltest/valid/not-sa/out/026.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "d28ecde9c515fe6b",
+      "source": "xmltest/valid/not-sa/out/027.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "39325915d4f2dfed",
+      "source": "xmltest/valid/not-sa/out/028.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "27622a24385163b8",
+      "source": "xmltest/valid/not-sa/out/029.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "14dfe45cf4df2069",
+      "source": "xmltest/valid/not-sa/out/030.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "78cb124454f05738",
+      "source": "xmltest/valid/not-sa/out/031.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "863b826dc9045918",
+      "source": "xmltest/valid/sa/out/001.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "3d021b04b9ad9689",
+      "source": "xmltest/valid/sa/out/002.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "98bc545e92befa06",
+      "source": "xmltest/valid/sa/out/003.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "2f6b3f11d778439f",
+      "source": "xmltest/valid/sa/out/004.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "dfeee0aee4644ce2",
+      "source": "xmltest/valid/sa/out/005.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "180928f940b4d69b",
+      "source": "xmltest/valid/sa/out/006.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "29c74c21d7a4d4c9",
+      "source": "xmltest/valid/sa/out/007.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "c60bc655a9f88097",
+      "source": "xmltest/valid/sa/out/008.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "7815e40ec6cbd07e",
+      "source": "xmltest/valid/sa/out/009.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "8658b99bf50b6cf5",
+      "source": "xmltest/valid/sa/out/010.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "aea049316de47ab4",
+      "source": "xmltest/valid/sa/out/011.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "279ef118dce37d78",
+      "source": "xmltest/valid/sa/out/013.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "233b3f7c104991be",
+      "source": "xmltest/valid/sa/out/014.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "d829220adf100900",
+      "source": "xmltest/valid/sa/out/015.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "e87cef722cdfe87d",
+      "source": "xmltest/valid/sa/out/016.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "a53a3593f0490fe6",
+      "source": "xmltest/valid/sa/out/017.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "b3c92cd90e305832",
+      "source": "xmltest/valid/sa/out/018.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "d985929a32a892e4",
+      "source": "xmltest/valid/sa/out/019.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "3da9fe0f41ae1417",
+      "source": "xmltest/valid/sa/out/020.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "04ad6f0e2e5cfa4b",
+      "source": "xmltest/valid/sa/out/021.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "9b4ca8915c61262d",
+      "source": "xmltest/valid/sa/out/022.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "6588cf1d364fcaa0",
+      "source": "xmltest/valid/sa/out/023.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "b0f538acf747968d",
+      "source": "xmltest/valid/sa/out/024.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "81ba38d848161b29",
+      "source": "xmltest/valid/sa/out/025.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "45449f8a271f6b17",
+      "source": "xmltest/valid/sa/out/026.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "6bf51e9ea8af371a",
+      "source": "xmltest/valid/sa/out/027.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "ea86c634478698fd",
+      "source": "xmltest/valid/sa/out/028.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "848a52a8687495b6",
+      "source": "xmltest/valid/sa/out/029.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "591efe8eabd25062",
+      "source": "xmltest/valid/sa/out/030.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "28af8119fe659e38",
+      "source": "xmltest/valid/sa/out/031.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "824a0d68628563e1",
+      "source": "xmltest/valid/sa/out/032.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "dcb0386c6dcdd647",
+      "source": "xmltest/valid/sa/out/033.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "3384d19362687abf",
+      "source": "xmltest/valid/sa/out/034.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "0349f9edef22c86a",
+      "source": "xmltest/valid/sa/out/035.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "b43f2baa8f98b6ff",
+      "source": "xmltest/valid/sa/out/036.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "cbb2c744b2385e38",
+      "source": "xmltest/valid/sa/out/037.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "a3fad7e0bbe32e11",
+      "source": "xmltest/valid/sa/out/038.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "419feab6b57fc962",
+      "source": "xmltest/valid/sa/out/039.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "76d64a44aeaece9e",
+      "source": "xmltest/valid/sa/out/040.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "c5ecfd04502cc8e8",
+      "source": "xmltest/valid/sa/out/041.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "df67dc8bf5a02815",
+      "source": "xmltest/valid/sa/out/042.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "9006bb48da2f890f",
+      "source": "xmltest/valid/sa/out/043.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "76ec684416129948",
+      "source": "xmltest/valid/sa/out/044.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "fa8eb88977c780fb",
+      "source": "xmltest/valid/sa/out/045.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "93e62a2626f32894",
+      "source": "xmltest/valid/sa/out/046.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "06b57aecdeee31a1",
+      "source": "xmltest/valid/sa/out/047.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "b1ab50395e725eba",
+      "source": "xmltest/valid/sa/out/048.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "061aa00d36341c14",
+      "source": "xmltest/valid/sa/out/049.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "be5b9de4b28ecab1",
+      "source": "xmltest/valid/sa/out/050.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "751fc093b7257cda",
+      "source": "xmltest/valid/sa/out/051.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "b9b613b680e23849",
+      "source": "xmltest/valid/sa/out/052.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "4cd0c690a2390ee1",
+      "source": "xmltest/valid/sa/out/053.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "d726fdb51f230649",
+      "source": "xmltest/valid/sa/out/054.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "d10bebd443cc6450",
+      "source": "xmltest/valid/sa/out/055.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "4654f16b04430c1d",
+      "source": "xmltest/valid/sa/out/056.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "d6ea45837de2cc0f",
+      "source": "xmltest/valid/sa/out/057.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "a0b5f6221f27980b",
+      "source": "xmltest/valid/sa/out/058.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "e920c66430bbbdf2",
+      "source": "xmltest/valid/sa/out/059.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "fe93d0405b999eff",
+      "source": "xmltest/valid/sa/out/060.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "739c7a02121c89f8",
+      "source": "xmltest/valid/sa/out/061.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "364a441bf6bee7fb",
+      "source": "xmltest/valid/sa/out/062.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "60b2dc1f1f298ad8",
+      "source": "xmltest/valid/sa/out/063.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "7ff81b129d917e2e",
+      "source": "xmltest/valid/sa/out/064.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "ee320728931b85d2",
+      "source": "xmltest/valid/sa/out/065.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "bff96164f9ac1a15",
+      "source": "xmltest/valid/sa/out/066.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "b03919bd3add8ca8",
+      "source": "xmltest/valid/sa/out/067.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "1fbeb0e9758acccd",
+      "source": "xmltest/valid/sa/out/068.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "a7f9215ad0035d7b",
+      "source": "xmltest/valid/sa/out/070.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "f62bbb8dae6cd6e8",
+      "source": "xmltest/valid/sa/out/071.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "0a5765a7f9ce7dac",
+      "source": "xmltest/valid/sa/out/072.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "7ae0e45977aa3d92",
+      "source": "xmltest/valid/sa/out/073.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "c408b6a450757273",
+      "source": "xmltest/valid/sa/out/074.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "33cc1007d391e740",
+      "source": "xmltest/valid/sa/out/075.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "f8923a14d85cac99",
+      "source": "xmltest/valid/sa/out/077.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "c2f7e8b48f641d63",
+      "source": "xmltest/valid/sa/out/078.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "407052bcbf676c08",
+      "source": "xmltest/valid/sa/out/079.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "0d3a7172ea654c36",
+      "source": "xmltest/valid/sa/out/080.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "ffd3c0b1cf894a64",
+      "source": "xmltest/valid/sa/out/081.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "dfc5cd734cc43c68",
+      "source": "xmltest/valid/sa/out/082.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "304fb71cc3dbfb3e",
+      "source": "xmltest/valid/sa/out/083.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "0a56dcc70bdab13e",
+      "source": "xmltest/valid/sa/out/084.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "533c94343bd3f152",
+      "source": "xmltest/valid/sa/out/085.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "0805b7a4a7720d87",
+      "source": "xmltest/valid/sa/out/086.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "6dfe5ba0776f9a6a",
+      "source": "xmltest/valid/sa/out/087.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "bbb97e88039edac5",
+      "source": "xmltest/valid/sa/out/088.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "d89c033d911e15bf",
+      "source": "xmltest/valid/sa/out/089.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "0efb0aeee4d8b71a",
+      "source": "xmltest/valid/sa/out/092.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "ee08545c782c9edc",
+      "source": "xmltest/valid/sa/out/093.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "67740d7ac6dbc902",
+      "source": "xmltest/valid/sa/out/094.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "6921e236fd863ee8",
+      "source": "xmltest/valid/sa/out/095.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "73a40514ba9b33bb",
+      "source": "xmltest/valid/sa/out/096.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "f7af50eb992fe2ca",
+      "source": "xmltest/valid/sa/out/097.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "afef6965caf63ae6",
+      "source": "xmltest/valid/sa/out/098.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "b89ed693dbd91fd2",
+      "source": "xmltest/valid/sa/out/099.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "5959f0f0d2b63ab0",
+      "source": "xmltest/valid/sa/out/100.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "2707d899d7be1467",
+      "source": "xmltest/valid/sa/out/101.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "42354fa9abc249e8",
+      "source": "xmltest/valid/sa/out/102.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "99c09749e2da2a38",
+      "source": "xmltest/valid/sa/out/103.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "11e39d9cab3f72f9",
+      "source": "xmltest/valid/sa/out/104.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "f9b0f4da32590735",
+      "source": "xmltest/valid/sa/out/105.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "44c2c70a201778d4",
+      "source": "xmltest/valid/sa/out/106.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "968b459ef09a848d",
+      "source": "xmltest/valid/sa/out/107.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "2596c051db4242c9",
+      "source": "xmltest/valid/sa/out/108.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "713d252e8f94f32d",
+      "source": "xmltest/valid/sa/out/109.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "8077dc0f0a0da920",
+      "source": "xmltest/valid/sa/out/110.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "48dddd5b886a7ba9",
+      "source": "xmltest/valid/sa/out/111.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "9ae9718eaf6725ef",
+      "source": "xmltest/valid/sa/out/112.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "1530e29fba39af40",
+      "source": "xmltest/valid/sa/out/113.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "6ea6629d0e1d8006",
+      "source": "xmltest/valid/sa/out/114.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "4349463e18abc3cc",
+      "source": "xmltest/valid/sa/out/115.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "748e1abfccc6aa9f",
+      "source": "xmltest/valid/sa/out/116.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "c5247d1a6f6f053e",
+      "source": "xmltest/valid/sa/out/117.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "dd57e2f176f2ebba",
+      "source": "xmltest/valid/sa/out/118.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "123bf7760f07366d",
+      "source": "xmltest/valid/sa/out/119.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    },
+    {
+      "id": "c15865453993b065",
+      "source": "xmltest/xmltest.xml",
+      "status": "pass",
+      "suite": "xmlconf"
+    }
+  ],
+  "schema_version": 1,
+  "source_revisions": {
+    "xmlconf": {
+      "revision": "96151685cec997e1f9f3387e3626d61e6284d4d6e66e0e440c209286c03e9cc7",
+      "synced_at": "2026-09-09T19:58:46Z",
+      "url": "https://www.w3.org/XML/Test/xmlts20080827.tar.gz"
+    }
+  },
+  "total": 535
+}
