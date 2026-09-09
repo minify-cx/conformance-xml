@@ -2,7 +2,7 @@
   "counts": {
     "pass": 535
   },
-  "duration_seconds": 0.345,
+  "duration_seconds": 0.055,
   "eligibility": {
     "eligible": 535,
     "excluded": {
@@ -12,9 +12,9 @@
     }
   },
   "format": "xml",
-  "generated_at": "2026-09-09T20:17:39Z",
+  "generated_at": "2026-09-09T23:35:43Z",
   "minifier": {
-    "path": "/workspace/scratch/04e13b047c72/conformance-work/minify/minify"
+    "path": "/home/nick/Repositories/nift/minify/minify/minify"
   },
   "results": [
     {
@@ -3232,7 +3232,7 @@
   "source_revisions": {
     "xmlconf": {
       "revision": "96151685cec997e1f9f3387e3626d61e6284d4d6e66e0e440c209286c03e9cc7",
-      "synced_at": "2026-09-09T19:58:46Z",
+      "synced_at": "2026-09-09T22:26:36Z",
       "url": "https://www.w3.org/XML/Test/xmlts20080827.tar.gz"
     }
   },
