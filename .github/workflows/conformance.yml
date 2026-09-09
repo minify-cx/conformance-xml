@@ -1,0 +1,36 @@
+name: XML Conformance
+on:
+  workflow_dispatch:
+    inputs:
+      limit: {description: "Maximum eligible cases (0 = all)", required: true, default: "0"}
+  schedule: [{cron: "53 4 * * 1"}]
+permissions: {contents: read}
+jobs:
+  conformance:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd
+        with: {ref: stage}
+      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd
+        with: {repository: minify-cx/minify, path: minify-source}
+      - run: make
+        working-directory: minify-source
+      - run: python3 -m pip install -r requirements.txt
+      - run: make test
+      - run: python3 tools/conformance.py smoke --minify-bin "$GITHUB_WORKSPACE/minify-source/minify"
+      - run: make sync
+      - shell: bash
+        run: |
+          limit='${{ inputs.limit }}'
+          if [[ -n "$limit" && "$limit" != 0 ]]; then
+            python3 tools/conformance.py extract --limit "$limit"
+          else
+            make extract
+          fi
+          python3 tools/conformance.py run --minify-bin "$GITHUB_WORKSPACE/minify-source/minify"
+      - if: always()
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a
+        with:
+          name: xml-conformance-results
+          path: results/

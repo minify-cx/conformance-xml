@@ -1,0 +1,10 @@
+.state/
+work/
+results/latest.json
+results/history/
+*.pyc
+__pycache__/
+generated/
+node_modules/
+.nift/.lock
+.nift/public/
