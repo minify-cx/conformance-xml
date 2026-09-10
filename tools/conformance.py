@@ -207,6 +207,22 @@ def dashboard(result):
   page=(ROOT/"templates/template.html").read_text().replace('@input("templates/head.html")',head).replace("@content",g.read_text()).replace("@path('public/assets/js/script.js')","assets/js/script.js")
   (ROOT/"public/index.html").write_text(page)
   shutil.copytree(ROOT/"content/assets",ROOT/"public/assets",dirs_exist_ok=True)
+ verify_dashboard(result,ROOT/"public/index.html",ROOT/"public/results/latest.json")
+
+
+def verify_dashboard(result_path,index_path,published_path):
+ # Prove the freshly built dashboard reflects exactly this completed run: the
+ # published JSON must carry the same counts, source revisions and generation
+ # timestamp, and the rendered page must contain no unresolved Nift
+ # directives.
+ data=load(result_path); pub=load(published_path)
+ for key in ("counts","source_revisions","generated_at"):
+  if pub.get(key)!=data.get(key):
+   raise SystemExit(f"dashboard mismatch: {key} differs between result and published copy")
+ text=Path(index_path).read_text()
+ for token in ("@path(","@pathto(","@input(","@content"):
+  if token in text: raise SystemExit(f"unresolved Nift directive in dashboard: {token}")
+ print("dashboard verified: published JSON matches run and page has no unresolved directives")
 
 def main():
  p=argparse.ArgumentParser(); s=p.add_subparsers(dest="cmd",required=True)
