@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Independent format conformance runner for Minify++."""
 from __future__ import annotations
-import argparse, datetime, decimal, hashlib, html, json, os, shutil, subprocess, tarfile, tempfile, time, urllib.request
+import argparse, datetime, decimal, hashlib, html, json, os, re, shutil, subprocess, sys, tarfile, tempfile, time, urllib.request
 from pathlib import Path
 
 ROOT=Path(__file__).resolve().parents[1]
@@ -60,6 +60,30 @@ def json_value(text):
    seen.add(k); out[k]=v
   return out
  return json.loads(text,parse_float=decimal.Decimal,parse_int=decimal.Decimal,object_pairs_hook=pairs)
+
+
+def minifier_identity(exe):
+ probe=subprocess.run([str(exe),'--version'],capture_output=True,text=True)
+ text=(probe.stdout or probe.stderr or '').strip()
+ m=re.search(r'(\d+\.\d+\.\d+)',text)
+ commit=None
+ parent=Path(exe).resolve().parent
+ if (parent/'.git').exists():
+  r=subprocess.run(['git','-C',str(parent),'rev-parse','HEAD'],capture_output=True,text=True)
+  if r.returncode==0: commit=r.stdout.strip()
+ return {'name':'Minify++','version':m.group(1) if m else text,'version_string':text,'commit':commit,'path':str(exe)}
+
+def oracle_identity():
+ if FORMAT=="json":
+  return {'name':'python-stdlib-json','implementation':sys.implementation.name,'python_version':sys.version.split()[0],'parser':'json.loads with parse_float/int=Decimal and duplicate-key-rejecting object_pairs_hook'}
+ if FORMAT=="jsx":
+  cp=subprocess.run(["node","-e",'const ts=require("typescript");process.stdout.write(JSON.stringify({node:process.version,typescript:ts.version}))'],capture_output=True,text=True,cwd=ROOT)
+  try: d=json.loads(cp.stdout or '{}')
+  except Exception: d={}
+  return {'name':'typescript-tsx-oracle','node':d.get('node'),'typescript':d.get('typescript')}
+ from lxml import etree
+ import lxml
+ return {'name':'lxml','version':getattr(lxml,'__version__','unknown'),'libxml2':'.'.join(str(x) for x in etree.LIBXML_VERSION)}
 
 def xml_value(text):
  from lxml import etree
@@ -175,7 +199,7 @@ def execute(cases_path,exe,result):
   rows.append(row)
  summary_path=cases_path.with_suffix(".summary.json")
  eligibility=load(summary_path) if summary_path.exists() else {"eligible":len(cases),"excluded":{}}
- payload={"schema_version":1,"format":FORMAT,"generated_at":now(),"duration_seconds":round(time.time()-started,3),"source_revisions":lock(),"eligibility":eligibility,"minifier":{"path":str(exe)},"total":len(rows),"counts":counts,"results":rows}
+ payload={"schema_version":1,"format":FORMAT,"generated_at":now(),"duration_seconds":round(time.time()-started,3),"source_revisions":lock(),"eligibility":eligibility,"minifier":minifier_identity(exe),"oracle":oracle_identity(),"total":len(rows),"counts":counts,"results":rows}
  save(result,payload); save(ROOT/"results/history"/f'{datetime.datetime.now(datetime.timezone.utc):%Y%m%dT%H%M%SZ}.json',payload)
  print(json.dumps(counts,sort_keys=True))
  failures=sum(counts.get(k,0) for k in ("minify-error","parser-rejected","semantic-difference","token-difference"))
@@ -190,12 +214,20 @@ def smoke_cases():
  }[FORMAT]
  return [{"id":n,"suite":"smoke","source":n,"text":s} for n,s in values]
 
+def provenance_text(data):
+ min=data.get('minifier',{}); ora=data.get('oracle',{}); revs=data.get('source_revisions',{})
+ bits=[f"<strong>Minify++</strong> {html.escape(str(min.get('version','')))}{(' ('+html.escape(str(min.get('commit',''))))[:9]+')' if min.get('commit') else ''}",
+       f"<strong>oracle</strong> {html.escape(str(ora.get('name','')))} {html.escape(str(ora.get('version',ora.get('typescript',''))))}"]
+ for k,v in revs.items():
+  bits.append(f"<strong>{html.escape(k)}</strong> <code>{html.escape(str(v.get('revision','')))[:12]}</code>")
+ return '<p class="provenance">' + ' &middot; '.join(bits) + '</p>'
+
 def dashboard(result):
  data=load(result); cards="".join(f"<li><strong>{html.escape(k)}</strong><span>{v}</span></li>" for k,v in sorted(data["counts"].items()))
  bad=[r for r in data["results"] if r["status"]!="pass"][:200]
  rows="".join(f'<tr><td>{html.escape(r["status"])}</td><td>{html.escape(r["source"])}</td><td><code>{r["id"]}</code></td></tr>' for r in bad) or '<tr><td colspan="3">No non-pass cases.</td></tr>'
  g=ROOT/"generated/latest.html"; g.parent.mkdir(exist_ok=True)
- g.write_text(f'<section class="hero"><p class="eyebrow">{FORMAT.upper()} conformance</p><h1>Minify++ {FORMAT.upper()} evidence</h1><p>{data["total"]} independently sourced eligible cases. Generated {data["generated_at"]}.</p></section><ul class="stats">{cards}</ul><section><h2>Non-pass evidence</h2><table><thead><tr><th>Status</th><th>Source</th><th>ID</th></tr></thead><tbody>{rows}</tbody></table></section>')
+ g.write_text(f'<section class="hero"><p class="eyebrow">{FORMAT.upper()} conformance</p><h1>Minify++ {FORMAT.upper()} evidence</h1><p>{data["total"]} independently sourced eligible cases. Generated {data["generated_at"]}.</p></section><ul class="stats">{cards}</ul>{provenance_text(data)}<section><h2>Non-pass evidence</h2><table><thead><tr><th>Status</th><th>Source</th><th>ID</th></tr></thead><tbody>{rows}</tbody></table></section>')
  (ROOT/"public/results").mkdir(parents=True,exist_ok=True); shutil.copy(result,ROOT/"public/results/latest.json")
  if shutil.which("nift"):
   subprocess.run(["nift","build","--all"],cwd=ROOT,check=True)
@@ -216,7 +248,7 @@ def verify_dashboard(result_path,index_path,published_path):
  # timestamp, and the rendered page must contain no unresolved Nift
  # directives.
  data=load(result_path); pub=load(published_path)
- for key in ("counts","source_revisions","generated_at"):
+ for key in ("counts","source_revisions","minifier","oracle","generated_at"):
   if pub.get(key)!=data.get(key):
    raise SystemExit(f"dashboard mismatch: {key} differs between result and published copy")
  text=Path(index_path).read_text()
