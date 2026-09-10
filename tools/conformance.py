@@ -200,6 +200,7 @@ def execute(cases_path,exe,result):
  summary_path=cases_path.with_suffix(".summary.json")
  eligibility=load(summary_path) if summary_path.exists() else {"eligible":len(cases),"excluded":{}}
  payload={"schema_version":1,"format":FORMAT,"generated_at":now(),"duration_seconds":round(time.time()-started,3),"source_revisions":lock(),"eligibility":eligibility,"minifier":minifier_identity(exe),"oracle":oracle_identity(),"total":len(rows),"counts":counts,"results":rows}
+ validate_identity(payload)
  save(result,payload); save(ROOT/"results/history"/f'{datetime.datetime.now(datetime.timezone.utc):%Y%m%dT%H%M%SZ}.json',payload)
  print(json.dumps(counts,sort_keys=True))
  failures=sum(counts.get(k,0) for k in ("minify-error","parser-rejected","semantic-difference","token-difference"))
@@ -222,7 +223,7 @@ def provenance_text(data):
   bits.append(f"<strong>{html.escape(k)}</strong> <code>{html.escape(str(v.get('revision','')))[:12]}</code>")
  return '<p class="provenance">' + ' &middot; '.join(bits) + '</p>'
 
-def dashboard(result):
+def dashboard(result, expected_commit=None):
  data=load(result); cards="".join(f"<li><strong>{html.escape(k)}</strong><span>{v}</span></li>" for k,v in sorted(data["counts"].items()))
  bad=[r for r in data["results"] if r["status"]!="pass"][:200]
  rows="".join(f'<tr><td>{html.escape(r["status"])}</td><td>{html.escape(r["source"])}</td><td><code>{r["id"]}</code></td></tr>' for r in bad) or '<tr><td colspan="3">No non-pass cases.</td></tr>'
@@ -239,15 +240,44 @@ def dashboard(result):
   page=(ROOT/"templates/template.html").read_text().replace('@input("templates/head.html")',head).replace("@content",g.read_text()).replace("@path('public/assets/js/script.js')","assets/js/script.js")
   (ROOT/"public/index.html").write_text(page)
   shutil.copytree(ROOT/"content/assets",ROOT/"public/assets",dirs_exist_ok=True)
- verify_dashboard(result,ROOT/"public/index.html",ROOT/"public/results/latest.json")
+ verify_dashboard(result,ROOT/"public/index.html",ROOT/"public/results/latest.json",expected_commit)
 
 
-def verify_dashboard(result_path,index_path,published_path):
+
+def validate_identity(payload, expected_commit=None):
+ # Explicit, format-aware identity validation for release-candidate evidence.
+ m=payload.get('minifier'); o=payload.get('oracle')
+ if not isinstance(m,dict) or not m: raise SystemExit('identity validation failed: minifier identity missing or empty')
+ if m.get('name')=='Minify++':
+  if not re.match(r'^\d+\.\d+\.\d+$',str(m.get('version') or '')): raise SystemExit('identity validation failed: minifier semantic version missing/malformed')
+  if not m.get('version_string'): raise SystemExit('identity validation failed: minifier version_string empty')
+  c=str(m.get('commit') or '')
+  if not re.match(r'^[0-9a-f]{40}$',c): raise SystemExit('identity validation failed: minifier commit missing/malformed')
+  if expected_commit and c!=expected_commit: raise SystemExit('identity validation failed: minifier commit %s != expected %s'%(c,expected_commit))
+ else:
+  if not m.get('name') or not m.get('version'): raise SystemExit('identity validation failed: minifier name/version missing')
+ if not isinstance(o,dict) or not o: raise SystemExit('identity validation failed: oracle identity missing or empty')
+ if FORMAT=="json":
+  for k in ("name","implementation","python_version","parser"):
+   if not o.get(k): raise SystemExit('identity validation failed: oracle field %s empty'%k)
+ elif FORMAT=="jsx":
+  for k in ("name","node","typescript"):
+   if not o.get(k): raise SystemExit('identity validation failed: oracle field %s empty'%k)
+ elif FORMAT in ("xml","svg"):
+  for k in ("name","version","libxml2"):
+   if not o.get(k): raise SystemExit('identity validation failed: oracle field %s empty'%k)
+ else:
+  for k in ("name","version"):
+   if not o.get(k): raise SystemExit('identity validation failed: oracle field %s empty'%k)
+
+def verify_dashboard(result_path,index_path,published_path,expected_commit=None):
  # Prove the freshly built dashboard reflects exactly this completed run: the
- # published JSON must carry the same counts, source revisions and generation
- # timestamp, and the rendered page must contain no unresolved Nift
- # directives.
+ # published JSON must carry the same counts, source revisions, identity and
+ # generation timestamp, the identities must be complete and non-empty, and
+ # the rendered page must contain no unresolved Nift directives.
  data=load(result_path); pub=load(published_path)
+ validate_identity(data,expected_commit)
+ validate_identity(pub,expected_commit)
  for key in ("counts","source_revisions","minifier","oracle","generated_at"):
   if pub.get(key)!=data.get(key):
    raise SystemExit(f"dashboard mismatch: {key} differs between result and published copy")
@@ -263,11 +293,11 @@ def main():
  for name in ("run","smoke"):
   q=s.add_parser(name); q.add_argument("--minify-bin",default="../minify/minify"); q.add_argument("--results",type=Path,default=RESULTS); q.add_argument("--dashboard",action="store_true")
   if name=="run": q.add_argument("--cases",type=Path,default=ROOT/f"work/{FORMAT}-cases.jsonl")
- d=s.add_parser("dashboard"); d.add_argument("--results",type=Path,default=RESULTS)
+ d=s.add_parser("dashboard"); d.add_argument("--results",type=Path,default=RESULTS); d.add_argument("--require-minifier-commit")
  a=p.parse_args()
  if a.cmd=="sync": sync(); return 0
  if a.cmd=="extract": extract(a.source or source_root(),a.output,a.limit); return 0
- if a.cmd=="dashboard": dashboard(a.results); return 0
+ if a.cmd=="dashboard": dashboard(a.results, a.require_minifier_commit); return 0
  if a.cmd=="smoke":
   path=ROOT/f"work/smoke-{FORMAT}.jsonl"; path.parent.mkdir(exist_ok=True); path.write_text("".join(json.dumps(x)+"\n" for x in smoke_cases()))
  else: path=a.cases

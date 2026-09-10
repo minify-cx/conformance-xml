@@ -38,15 +38,22 @@ class IdentityTests(unittest.TestCase):
     def test_dashboard_identity_propagation(self):
         import tempfile
         base = {"counts": {"pass": 1}, "source_revisions": {},
-                "minifier": {"name": "Minify++", "version": "1.1.2", "commit": "x"*40},
-                "oracle": {"name": "o", "version": "1"}, "generated_at": "2026-01-01T00:00:00Z"}
+                "minifier": {"name": "Minify++", "version": "1.1.2", "version_string": "Minify++ 1.1.2", "commit": "a"*40},
+                "oracle": runner.oracle_identity(), "generated_at": "2026-01-01T00:00:00Z"}
+        # Ensure the oracle carries its required fields so the propagation test
+        # is independent of the local runtime/oracle availability.
+        required = {"json": ("name","implementation","python_version","parser"),
+                    "jsx": ("name","node","typescript"),
+                    "svg": ("name","version","libxml2"), "xml": ("name","version","libxml2")}[runner.FORMAT]
+        for k in required:
+            if not base["oracle"].get(k): base["oracle"][k] = "test"
         with tempfile.TemporaryDirectory() as td:
             td = Path(td)
             (td/"res.json").write_text(json.dumps(base))
             (td/"pub.json").write_text(json.dumps(base))
             (td/"index.html").write_text("<h1>ok</h1>")
             runner.verify_dashboard(td/"res.json", td/"index.html", td/"pub.json")
-            bad = dict(base); bad["minifier"] = {"name": "Minify++", "version": "1.1.1", "commit": "y"*40}
+            bad = dict(base); bad["minifier"] = {"name": "Minify++", "version": "1.1.1", "commit": "b"*40}
             (td/"pub.json").write_text(json.dumps(bad))
             with self.assertRaises(SystemExit):
                 runner.verify_dashboard(td/"res.json", td/"index.html", td/"pub.json")
@@ -67,5 +74,40 @@ class IdentityTests(unittest.TestCase):
             self.assertEqual(ident["name"], "Minify++")
             self.assertEqual(ident["version"], "1.1.2")
             self.assertTrue(ident["commit"])
+
+
+
+def test_validate_identity_rejects_incomplete(self):
+    import copy
+    base = {"minifier": {"name": "Minify++", "version": "1.1.2", "version_string": "Minify++ 1.1.2", "commit": "a"*40},
+            "oracle": runner.oracle_identity()}
+    # missing identity object
+    with self.assertRaises(SystemExit): runner.validate_identity({"oracle": base["oracle"]})
+    # empty identity object
+    with self.assertRaises(SystemExit): runner.validate_identity({"minifier": {}, "oracle": base["oracle"]})
+    # empty required field
+    bad = copy.deepcopy(base); bad["minifier"]["version_string"] = ""
+    with self.assertRaises(SystemExit): runner.validate_identity(bad)
+    # missing / malformed commit
+    bad = copy.deepcopy(base); bad["minifier"]["commit"] = ""
+    with self.assertRaises(SystemExit): runner.validate_identity(bad)
+    bad = copy.deepcopy(base); bad["minifier"]["commit"] = "zz"
+    with self.assertRaises(SystemExit): runner.validate_identity(bad)
+    # oracle missing a format-specific field
+    bad = copy.deepcopy(base); bad["oracle"] = {"name": "x"}
+    with self.assertRaises(SystemExit): runner.validate_identity(bad)
+    # expected commit mismatch
+    with self.assertRaises(SystemExit): runner.validate_identity(base, expected_commit="f"*40)
+
+def test_dashboard_rejects_matching_empty_identity(self):
+    import tempfile
+    empty = {"counts": {"pass": 1}, "source_revisions": {}, "minifier": {}, "oracle": {}, "generated_at": "2026-01-01T00:00:00Z"}
+    with tempfile.TemporaryDirectory() as td:
+        td = Path(td)
+        (td/"res.json").write_text(json.dumps(empty))
+        (td/"pub.json").write_text(json.dumps(empty))
+        (td/"index.html").write_text("<h1>ok</h1>")
+        with self.assertRaises(SystemExit):
+            runner.verify_dashboard(td/"res.json", td/"index.html", td/"pub.json")
 
 if __name__=="__main__": unittest.main()

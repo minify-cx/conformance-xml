@@ -66,7 +66,7 @@ jobs:
           test "$(nift-candidate/nift --version)" = "Nift v4.0.12" \
             || { echo "FAIL: candidate Nift version is not v4.0.12" >&2; exit 1; }
           export PATH="$PWD/nift-candidate:$PATH"
-          python3 tools/conformance.py dashboard --results results/latest.json
+          python3 tools/conformance.py dashboard --results results/latest.json --require-minifier-commit 4866db785c78abb564697ade821d0e4425b89364
           test "$(stat -c %Y public/index.html)" -ge "$marker" \
             || { echo "FAIL: public/index.html was not freshly built" >&2; exit 1; }
           test "$(stat -c %Y public/results/latest.json)" -ge "$marker" \
