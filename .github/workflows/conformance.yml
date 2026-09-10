@@ -12,6 +12,23 @@ jobs:
     steps:
       - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd
         with: {ref: stage}
+      - name: Verify workflow mirror is in sync with stage
+        shell: bash
+        run: |
+          set -euo pipefail
+          git fetch --quiet origin main
+          if ! cmp -s <(git show origin/main:.github/workflows/conformance.yml) .github/workflows/conformance.yml; then
+            echo "FAIL: .github/workflows/conformance.yml diverges from the main-branch mirror; update both copies together" >&2
+            exit 1
+          fi
+      - name: Reject non-legacy @pathto usage
+        shell: bash
+        run: |
+          set -euo pipefail
+          if grep -rn "@pathto(" templates content .github HANDOVER.md 2>/dev/null; then
+            echo "FAIL: non-legacy @pathto( found in active dashboard sources" >&2
+            exit 1
+          fi
       - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd
         with: {repository: minify-cx/minify, path: minify-source}
       - run: make
@@ -29,8 +46,32 @@ jobs:
             make extract
           fi
           python3 tools/conformance.py run --minify-bin "$GITHUB_WORKSPACE/minify-source/minify"
+      - name: Build and verify static dashboard
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          marker="$(date +%s)"
+          rm -rf public
+          git clone --quiet --branch main \
+            "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" public
+          git clone --quiet https://github.com/nift-dev/nift.git nift-candidate
+          git -C nift-candidate checkout --quiet 77e44d15e43f0936876107c4df1fa6a5b8220be4
+          make -C nift-candidate -j2 >/dev/null
+          test "$(nift-candidate/nift --version)" = "Nift v4.0.12" \
+            || { echo "FAIL: candidate Nift version is not v4.0.12" >&2; exit 1; }
+          export PATH="$PWD/nift-candidate:$PATH"
+          python3 tools/conformance.py dashboard --results results/latest.json
+          test "$(stat -c %Y public/index.html)" -ge "$marker" \
+            || { echo "FAIL: public/index.html was not freshly built" >&2; exit 1; }
+          test "$(stat -c %Y public/results/latest.json)" -ge "$marker" \
+            || { echo "FAIL: public/results/latest.json was not freshly produced" >&2; exit 1; }
+          echo "dashboard built and verified"
       - if: always()
         uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a
         with:
           name: xml-conformance-results
-          path: results/
+          path: |
+            results/
+            public/
