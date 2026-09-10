@@ -196,7 +196,7 @@ def dashboard(result):
  rows="".join(f'<tr><td>{html.escape(r["status"])}</td><td>{html.escape(r["source"])}</td><td><code>{r["id"]}</code></td></tr>' for r in bad) or '<tr><td colspan="3">No non-pass cases.</td></tr>'
  g=ROOT/"generated/latest.html"; g.parent.mkdir(exist_ok=True)
  g.write_text(f'<section class="hero"><p class="eyebrow">{FORMAT.upper()} conformance</p><h1>Minify++ {FORMAT.upper()} evidence</h1><p>{data["total"]} independently sourced eligible cases. Generated {data["generated_at"]}.</p></section><ul class="stats">{cards}</ul><section><h2>Non-pass evidence</h2><table><thead><tr><th>Status</th><th>Source</th><th>ID</th></tr></thead><tbody>{rows}</tbody></table></section>')
- (ROOT/"public/results").mkdir(parents=True,exist_ok=True); shutil.copy2(result,ROOT/"public/results/latest.json")
+ (ROOT/"public/results").mkdir(parents=True,exist_ok=True); shutil.copy(result,ROOT/"public/results/latest.json")
  if shutil.which("nift"):
   subprocess.run(["nift","build","--all"],cwd=ROOT,check=True)
  else:
